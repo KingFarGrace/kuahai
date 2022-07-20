@@ -1,6 +1,6 @@
 # kuahai
 
-> for couples in different country
+> for couples in different countries
 
 ## Build Setup
 
