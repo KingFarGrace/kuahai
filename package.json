@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/KingFarGrace/kuahai#readme",
   "devDependencies": {
-    "electron": "^19.0.8"
+    "electron": "^19.0.8",
+    "jquery": "^3.6.0",
+    "jsdom": "^20.0.0"
   }
 }

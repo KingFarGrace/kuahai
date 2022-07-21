@@ -1,9 +1,17 @@
 const { app, BrowserWindow } = require('electron')
+const path = require('path')
+const jsdom = require('jsdom')
+const { JSDOM } = jsdom
+const { window } = new JSDOM(`!<DOCTYPE html>`)
+const $ = require('jQuery')(window)
 
 const createWindow = () => {
     const window = new BrowserWindow( {
         width : 800,
-        height : 600
+        height : 600,
+        webPreferences : {
+            preload: path.join(__dirname, 'preload.js')
+        }
     })
 
     window.loadFile("index.html")
